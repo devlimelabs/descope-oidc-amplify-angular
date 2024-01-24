@@ -1,0 +1,26 @@
+@for (todo of todos; track todo.id) {
+<div
+  style="
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0 1rem 1rem;
+    margin: 1rem;
+    width: 300px;
+  "
+>
+  <h1>
+    {{ todo.name }}
+  </h1>
+  <p>{{ todo.description }}</p>
+  <div style="padding: 0.5rem">
+    <button (click)="deleteTodo(todo)" style="margin-left: 1rem">
+      DELETE!
+    </button>
+  </div>
+</div>
+
+}
+
+<div style="width: 100%; display: flex; padding: 1rem">
+  <button (click)="addTodo()">Add Todo</button>
+</div>

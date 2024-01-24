@@ -22,7 +22,14 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "paths": {
+      "~mutations": ["./src/graphql/mutations"],
+      "~queries": ["./src/graphql/queries"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
